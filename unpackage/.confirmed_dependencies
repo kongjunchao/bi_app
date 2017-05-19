@@ -1,0 +1,133 @@
+{
+  "address.html": {
+    "href": "address.html",
+    "resources": [
+      "dist/css/mui.min.css",
+      "css/address.css",
+      "js/base.js",
+      "dist/js/mui.min.js",
+      "js/address_info.js",
+      "js/address.js"
+    ],
+    "refer": [
+      "index.html"
+    ],
+    "priority": 0
+  },
+  "user.html": {
+    "href": "user.html",
+    "resources": [
+      "dist/css/mui.min.css",
+      "css/common.css",
+      "js/base.js",
+      "dist/js/mui.min.js",
+      "plugin/echarts.js",
+      "js/common.js",
+      "js/user.js",
+      "plugin/echarts.min.js"
+    ],
+    "refer": [
+      "user.html"
+    ],
+    "priority": 0
+  },
+  "car.html": {
+    "href": "car.html",
+    "resources": [
+      "dist/css/mui.min.css",
+      "css/common.css",
+      "js/base.js",
+      "dist/js/mui.min.js",
+      "plugin/echarts.js",
+      "js/common.js",
+      "js/car.js",
+      "plugin/echarts.min.js"
+    ],
+    "refer": [
+      "car.html"
+    ],
+    "priority": 0
+  },
+  "realtime_details.html": {
+    "href": "realtime_details.html",
+    "resources": [
+      "dist/css/mui.min.css",
+      "css/realtime_details.css",
+      "js/base.js",
+      "dist/js/mui.min.js",
+      "plugin/echarts.js",
+      "js/common.js",
+      "js/realtime_details.js",
+      "plugin/echarts.min.js"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "realtime.html": {
+    "href": "realtime.html",
+    "resources": [
+      "dist/css/mui.min.css",
+      "css/realtime.css",
+      "js/base.js",
+      "dist/js/mui.min.js",
+      "plugin/echarts.js",
+      "js/realtime.js",
+      "plugin/echarts.min.js"
+    ],
+    "refer": [
+      "realtime_details.html"
+    ],
+    "priority": 0
+  },
+  "order.html": {
+    "href": "order.html",
+    "resources": [
+      "dist/css/mui.min.css",
+      "css/common.css",
+      "js/base.js",
+      "dist/js/mui.min.js",
+      "plugin/echarts.js",
+      "js/common.js",
+      "js/order.js",
+      "plugin/echarts.min.js"
+    ],
+    "refer": [
+      "order.html"
+    ],
+    "priority": 0
+  },
+  "index.html": {
+    "href": "index.html",
+    "resources": [
+      "dist/css/mui.min.css",
+      "css/index.css",
+      "js/base.js",
+      "dist/js/mui.min.js",
+      "js/index.js"
+    ],
+    "refer": [
+      "address.html",
+      "user.html",
+      "car.html",
+      "realtime.html",
+      "order.html"
+    ],
+    "priority": 0
+  },
+  "login.html": {
+    "href": "login.html",
+    "resources": [
+      "dist/css/mui.min.css",
+      "css/login.css",
+      "js/base.js",
+      "dist/js/zepto.min.js",
+      "dist/js/mui.min.js",
+      "js/common.js",
+      "js/login.js"
+    ],
+    "refer": [
+      "index.html"
+    ],
+    "priority": 0
+  }
+}

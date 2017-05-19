@@ -1,0 +1,185 @@
+@import "reset";
+
+.mui-content{
+    background-color: #FFF;
+}
+.mui-scroll{
+    background-color: #FFF;
+}
+.mui-pull-caption{
+    font-weight: normal;
+}
+.mui-icon-pulldown:before{
+    content: '';
+}
+.box-1{
+    width: 100%;
+    height: 200px/$ppr;
+    display: flex;
+    display: -webkit-flex;
+    margin-top: 20px/$ppr;
+    > div{
+        width: 50%;
+        height: 100%;
+        position: relative;
+        color: #55cbf8;
+        text-align: center;
+        .title-box{
+            width: 125px/$ppr;
+            height: 125px/$ppr;
+            border-radius: 100%;
+            background-color: #62dcd3;
+            display: inline-block;
+            border: 8px/$ppr solid #e6f9f8;
+            &:active{
+                background-color: #6AE5DE;
+            }
+            p{
+                font-size: 12px/$ppr;
+                color: #FFF;
+                margin-top: 28px/$ppr;
+                margin-bottom: 0;
+            }
+            h2{
+                font-size: 20px/$ppr;
+                color: #FFF;
+                margin: 0;
+            }
+        }
+        h3{
+            height: 25px/$ppr;
+            line-height: 25px/$ppr;
+            margin: 0;
+            margin-top: 15px/$ppr;
+            overflow: hidden;
+        }
+        h4{
+            font-size: 26px/$ppr;
+            height: 35px/$ppr;
+            line-height: 35px/$ppr;
+            margin: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+}
+#user_chart{
+    width: 100%;
+    height: 260px/$ppr;
+    margin-top: 20px/$ppr;
+}
+.data-list{
+    width: 94%;
+    margin-left: 3%;
+    margin-top: 20px/$ppr;
+    ul{
+        width: 100%;
+        position: relative;
+        li{
+            width: 100%;
+            height: 45px/$ppr;
+            line-height: 45px/$ppr;
+            display: flex;
+            display: -webkit-flex;
+            &:not(:nth-last-child(1)){
+                border-bottom: 1px solid #f2f5fa;
+            }
+            &:before{
+                content: "\e674";
+                color: #62dcd3;
+                font-size: 12px/$ppr;
+                font-family: "iconfont" !important;
+                position: absolute;
+                left: 0;
+            }
+            &:after{
+                content: "\e620";
+                color: #888888;
+                font-size: 10px/$ppr;
+                font-family: "iconfont" !important;
+                position: absolute;
+                right: 0;
+            }
+            &:active{
+                &:before{
+                    color: #FF6C60;
+                }
+            }
+            &:nth-child(1){
+                &:before{
+                    content: '';
+                }
+                &:after{
+                    content: '';
+                }
+            }
+            span{
+                font-size: 15px/$ppr;
+                color: #888888;
+                overflow: hidden;
+                &:nth-child(1){
+                    width: 29%;
+                    margin-left: 6%;
+                }
+                &:nth-child(2){
+                    width: 30%;
+                    margin-left: 3%;
+                    text-align: center;
+                }
+                &:nth-child(3){
+                    width: 29%;
+                    margin-left: 3%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+.data-details-ul{
+    width: 80%;
+    position: fixed;
+    top: 7%;
+    left: 10%;
+    background-color: rgba(0, 0, 0, .7);
+    border-radius: 12px;
+    z-index: 2;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 15px/$ppr;
+    li{
+        width: 100%;
+        height: 35px/$ppr;
+        line-height: 35px/$ppr;
+        overflow: hidden;
+        display: flex;
+        display: -webkit-flex;
+        &:nth-child(1){
+            height: 60px/$ppr;
+            line-height: 60px/$ppr;
+            border-bottom: 1px solid #FFF;
+            a{
+                width: 30px/$ppr;
+                height: 30px/$ppr;
+                line-height: 30px/$ppr;
+                text-align: center;
+                display: block;
+                position: absolute;
+                top: 0;
+                right: 0;
+                color: #FFF;
+                font-size: 20px/$ppr;
+            }
+        }
+        &:nth-child(2){
+            margin-top: 12px/$ppr;
+        }
+        span{
+            width: 50%;
+            height: 100%;
+            color: #FFF;
+            display: inline-block;
+            text-align: center;
+        }
+    }
+}

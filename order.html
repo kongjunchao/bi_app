@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="dist/css/mui.min.css">
+		<link rel="stylesheet" href="css/common.css">
+		<script src="js/juicer.js"></script>
+		<script>
+			var _webview = 'order.html';
+			var _api = 'order';
+			var _name = '订单';
+		</script>
+	</head>
+	<body>
+		<div id="refreshContainer" class="mui-content mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<div id="main">
+					<script id="tpl" type="text/template">
+						<div class="box-1">
+							{@each dataTop as item, index}
+								<div>
+									<div class="title-box" data-name="${item.field_name|regName}" data-type="${index}">
+										<p>周同比</p>
+										<h2>${item.rate}%</h2>
+									</div><!--title-box-->
+									<h3>${item.field_name}</h3>
+									<h4>${item.num}</h4>
+								</div>
+							{@/each}
+						</div><!--box-1-->
+						<div id="user_chart"></div>
+						<div class="data-list">
+							<ul>
+								<li>
+									<span></span>
+									<span>昨日</span>
+									<span>周同比</span>
+								</li>
+								{@each dataNormal as item, index}
+									<li data-name="${item.field_name}" data-type="${index}">
+										<span>${item.field_name}</span>
+										<span>${item.num}</span>
+										<span>${item.rate}%</span>
+									</li>
+								{@/each}
+							</ul>
+						</div><!--data-list-->
+					</script>
+				</div><!--main-->
+			</div><!--mui-scroll-->
+		</div>
+		<script src="js/config.js"></script>
+		<script src="js/base.js"></script>
+		<script src="dist/js/zepto.min.js"></script>
+		<script src="dist/js/mui.min.js"></script>
+		<script src="plugin/echarts.min.js"></script>
+		<script src="js/common.js"></script>
+		<script src="js/get_data.js"></script>
+	</body>
+</html>

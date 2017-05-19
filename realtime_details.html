@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="dist/css/mui.min.css">
+		<link rel="stylesheet" href="css/realtime_details.css">
+		<script src="js/juicer.js"></script>
+	</head>
+	<body>
+		<div id="main">
+			<script id="tpl" type="text/template">
+				<div id="refreshContainer" class="mui-content mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<a href="#" class="mui-action-back back-btn iconfont">&#xe63e;</a>
+						<time>${time}</time>
+						<div id="user_chart">
+							
+						</div>
+						<div class="data-list">
+							<ul>
+								<li>
+									<span>今日实时</span>
+									<span>${data.today_realtime_data}</span>
+								</li>
+								<li>
+									<span>昨日实时</span>
+									<span>${data.last_week_data}</span>
+								</li>
+								<li>
+									<span>周同比变更</span>
+									<span>${data.day_change_data}</span>
+								</li>
+								<li>
+									<span>周同比变更（%）</span>
+									<span>${data.day_balance_data}%</span>
+								</li>
+								<li>
+									<span>今日预计</span>
+									<span>${data.today_expect_data}</span>
+								</li>
+							</ul>
+						</div><!--data-list-->
+					</div><!--mui-scroll-->
+				</div>
+			</script>
+		</div><!--main-->
+		<script src="js/config.js"></script>
+		<script src="js/base.js"></script>
+		<script src="dist/js/mui.min.js"></script>
+		<script src="plugin/echarts.min.js"></script>
+		<script src="js/common.js"></script>
+		<script src="js/realtime_details.js"></script>
+	</body>
+</html>

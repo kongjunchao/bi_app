@@ -1,0 +1,96 @@
+@import "rem";
+
+@font-face{
+    font-family: 'iconfont';
+    src: url('../font/iconfont.eot'); /* IE9*/
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../font/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../font/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{
+    font-family: "iconfont" !important;
+    font-size: 15px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-weight: normal;
+}
+html{
+    font-size: 15px/$ppr;
+}
+body{
+    width: 100%;
+    font-size: 15px/$ppr;
+    background-color: #FFF;
+}
+h1, h2, h3, h4, h5, h6{
+    font-size: 15px/$ppr;
+    font-weight: normal;
+}
+input{
+    display: inline-block;
+    vertical-align: top;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+button, input, select, textarea{
+    -webkit-appearance: none;
+}
+textarea{
+    resize: none;
+}
+ul, ol, li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    color: #333;
+    &:hover{
+        text-decoration: none;
+    }
+}
+address, em, i{
+    font-style: normal;
+}
+::-webkit-input-placeholder{
+    color: #bcbcbc;
+}
+.loading{
+    width: 80px/$ppr;
+    height: 80px/$ppr;
+    position: fixed;
+    top: 32%;
+    left: 50%;
+    background-color: rgba(0, 0, 0, .7);
+    z-index: 2;
+    border-radius: 5px;
+    transform: translateX(-50%);
+    overflow: hidden;
+    div{
+        width: 40px/$ppr;
+        height: 40px/$ppr;
+        border: 2px solid #FFF;
+        border-top: 2px solid transparent;
+        margin-top: 20px/$ppr;
+        margin-left: 20px/$ppr;
+        box-sizing: border-box;
+        border-radius: 100%;
+        animation: cycle 1s ease 0s infinite both;
+        -webkit-animation: cycle 1s ease 0s infinite both;
+    }
+}
+@keyframes cycle{
+    0% {}
+    100% {transform: rotate(360deg);}
+}
+@-webkit-keyframes cycle{
+    0% {}
+    100% {-webkit-transform: rotate(360deg); transform: rotate(360deg);}
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="dist/css/mui.min.css">
+		<link rel="stylesheet" href="css/address.css">
+		<script src="js/juicer.js"></script>
+	</head>
+	<body>
+		<div class="mui-content">
+			<header class="header">
+				<input type="text" name="address" class="search-address-input" placeholder="请输入城市名称" />
+			</header><!--header-->
+			<p>当前位置：<span id="currentCity" data-city="">正在获取...</span></p>
+			<div id="main">
+				<script id="tpl" type="text/template">
+					<div class="hot-city-list">
+						<ul>
+							{@each hotCity as item}
+								<li data-city=${item.city}>${item.city_name}</li>
+							{@/each}
+						</ul>
+					</div><!--hot-city-list-->
+					<div class="data-list">
+						<ul>
+							{@each city as item}
+								<li data-city=${item.city}>${item.city_name}</li>
+							{@/each}
+						</ul>
+					</div><!--data-list-->
+				</script>
+			</div><!--main-->
+		</div>
+		<script src="js/config.js"></script>
+		<script src="js/base.js"></script>
+		<script src="dist/js/mui.min.js"></script>
+		<script src="js/common.js"></script>
+		<script src="js/address.js"></script>
+	</body>
+</html>

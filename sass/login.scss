@@ -1,0 +1,93 @@
+@import "reset";
+
+body{
+    text-align: center;
+}
+.title-box {
+    width: 375px/$ppr;
+    height: 120px/$ppr;
+    overflow: hidden;
+    color: #1ca5fb;
+    text-align: center;
+    background: url(../img/img_2x_03.png) no-repeat 20% 0, url(../img/img_2x_07.png) no-repeat 75% bottom;
+    background-size: 45px/$ppr, 24px/$ppr;
+    margin-top: 85px/$ppr;
+    h2{
+        font-size: 18px/$ppr;
+        margin-top: 10px/$ppr;
+    }
+    h3{
+        font-size: 22px/$ppr;
+        span{
+            font-size: 40px/$ppr;
+            &:nth-child(2){
+                color: #6bba4f;
+            }
+        }
+    }
+}
+.login-box{
+    width: 240px/$ppr;
+    @include toRem(margin, 35, 67.5, 0, 67.5);
+    text-align: center;
+    .input-box{
+        width: 100%;
+        height: 38px/$ppr;
+        border-bottom: 1px solid #dfdfdf;
+        font-size: 0;
+        i{
+            display: inline-block;
+            vertical-align: top;
+            width: 10%;
+            font-size: 15px/$ppr;
+            line-height: 38px/$ppr;
+            color: #1ca5fb;
+        }
+        input{
+            width: 90%;
+            height: 100%;
+            border: 0;
+            font-size: 15px/$ppr;
+            text-indent: 5px/$ppr;
+        }
+//      &:nth-of-type(1){
+//          input{
+//              width: 56%;
+//          }
+//          a{
+//              width: 34%;
+//              height: 100%;
+//              display: inline-block;
+//              vertical-align: top;
+//              font-size: 13px/$ppr;
+//              line-height: 38px/$ppr;
+//              color: #1ca5fb;
+//          }
+//      }
+        &:nth-of-type(2){
+            margin-top: 15px/$ppr;
+        }
+    }
+    #login_btn{
+        width: 180px/$ppr;
+        height: 40px/$ppr;
+        background-color: #d6dadd;
+        border: 0;
+        border-radius: 40px/$ppr;
+        color: #FFF;
+        margin-top: 30px/$ppr;
+        font-size: 15px/$ppr;
+        &.active{
+            background-color: #1ca5fb;
+        }
+    }
+}
+.version_btn{
+   color: #1ca5fb;
+   margin-top: 30px/$ppr;
+   display: inline-block;
+   font-size: 12px/$ppr;
+   &:hover{
+       color: #1ca5fb;
+   }
+}

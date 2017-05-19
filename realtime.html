@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="dist/css/mui.min.css">
+		<link rel="stylesheet" href="css/realtime.css">
+		<script src="js/juicer.js"></script>
+	</head>
+	<body>
+		<div id="refreshContainer" class="mui-content mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<div id="main">
+					<script id="tpl" type="text/template">
+						<time>${data.date_time}</time>
+						<div class="box-1">
+							<div class="box-1-left">
+								<div id="order_num_chart"></div>
+								<div class="title-box" data-name="完成订单">
+									<h2>完成订单</h2>
+									<h3>${data.finish}</h3>
+									<h4>${data.finish_balance}%</h4>
+								</div><!--title-box-->
+								<h2>今日预计</h2>
+								<h3>${data.finish_expect}</h3>
+							</div><!--div-1-left-->
+							<div class="box-1-right">
+								<div id="order_money_chart"></div>
+								<div class="title-box" data-name="有效订单">
+									<h2>有效订单</h2>
+									<h3>${data.valid}</h3>
+									<h4>${data.valid_balance}%</h4>
+								</div><!--title-box-->
+								<h2>今日预计</h2>
+								<h3>${data.valid_expect}</h3>
+							</div><!--box-1-right-->
+						</div><!--box-1-->
+						<div class="data-box">
+							<ul>
+								<li>
+									<span></span>
+									<span>今日实时</span>
+									<span>周同比</span>
+									<span>今日预计</span>
+								</li>
+								<li data-name="派单成功数">
+									<span>派单成功数</span>
+									<span>${data.allocSuccess}</span>
+									<span>${data.allocSuccess_balance}%</span>
+									<span>${data.allocSuccess_expect}</span>
+								</li>
+								<li data-name="注册用户">
+									<span>注册用户</span>
+									<span>${data.reg}</span>
+									<span>${data.reg_balance}%</span>
+									<span>${data.reg_expect}</span>
+								</li>
+								<li data-name="订单收入">
+									<span>订单收入</span>
+									<span>${data.price}</span>
+									<span>${data.price_balance}%</span>
+									<span>${data.price_expect}</span>
+								</li>
+								<li data-name="单均">
+									<span>单均</span>
+									<span>${data.average_price}</span>
+									<span>${data.average_balance}%</span>
+									<span>${data.average_expect}</span>
+								</li>
+							</ul>
+						</div><!--data-box-->
+					</script>
+				</div><!--main-->
+			</div><!--mui-scroll-->
+		</div>
+		<script src="js/config.js"></script>
+		<script src="js/base.js"></script>
+		<script src="dist/js/mui.min.js"></script>
+		<script src="plugin/echarts.min.js"></script>
+		<script src="js/common.js"></script>
+		<script src="js/realtime.js"></script>
+	</body>
+</html>

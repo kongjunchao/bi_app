@@ -1,0 +1,31 @@
+{
+  "user.html": {
+    "href": "user.html",
+    "resources": [],
+    "refer": [],
+    "priority": 1
+  },
+  "car.html": {
+    "href": "car.html",
+    "resources": [],
+    "refer": [],
+    "priority": 2
+  },
+  "realtime_details.html": {
+    "href": "realtime_details.html",
+    "resources": [],
+    "priority": 3
+  },
+  "realtime.html": {
+    "href": "realtime.html",
+    "resources": [],
+    "refer": [],
+    "priority": 3
+  },
+  "order.html": {
+    "href": "order.html",
+    "resources": [],
+    "refer": [],
+    "priority": 4
+  }
+}

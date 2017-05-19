@@ -1,0 +1,29 @@
+@import "reset";
+
+a{
+    display: inline-block;
+    margin-top: 20px/$ppr;
+    margin-left: 4%;
+    color: #1ca5fb;
+    font-size: 14px/$ppr;
+    &:hover{
+        color: #1ca5fb;
+    }
+}
+ul{
+    width: 92%;
+    margin-top: 20px/$ppr;
+    margin-left: 4%;
+    li{
+        line-height: 20px/$ppr;
+        font-size: 12px/$ppr;
+        color: #888888;
+        &:nth-child(1){
+            font-size: 14px/$ppr;
+            line-height: 25px/$ppr;
+            time{
+                margin-left: 30px/$ppr;
+            }
+        }
+    }
+}
